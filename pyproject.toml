@@ -1,0 +1,18 @@
+[project]
+name = "ez-convphase"
+version = "0.1.0"
+description = "ConvPhase/PHASE wrapper for ragged FASTA alignments: sanitize → phase → rebuild"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["biopython>=1.81"]
+
+[project.scripts]
+ezconvphase = "ez_convphase.cli:main"
+ezconvphase-gui = "ez_convphase.gui:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["ez_convphase"]
