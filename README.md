@@ -1,6 +1,6 @@
 # ez-convphase
 
-ConvPhase wrapper for ragged FASTA alignments. **Cleans headers**, **masks** problematic columns, runs **ConvPhase** in parallel, then **rebuilds the original alignment** around the phased positions (column-for-column). Supports Haploview & MolD header styles. TSV functions not supported.
+ConvPhase wrapper for ragged FASTA alignments. Cleans headers, masks problematic columns, runs **ConvPhase** in parallel, then rebuilds the original alignment around the phased positions (column-for-column). Supports regular, Haploview & MolD header styles. TSV functions not supported.
 
 > Not affiliated with iTaxoTools/ConvPhase/PHASE.
 
@@ -8,7 +8,7 @@ ConvPhase wrapper for ragged FASTA alignments. **Cleans headers**, **masks** pro
 
 ## Why?
 
-- Alignments often contain missing, gap, and tri-allelic characters, which are not supported by ConvPhase.
+- Alignments can contain tri-allelic, missing and gap characters, which are not supported by ConvPhase.
 - ConvPhase requires strict inputs, this wrappers removes columns with prohibited characters and round-trips back to the **original alignment length**.
 - `ez-convphase` does: *sanitize → phase → rebuild* — and preserves your IDs.
 
