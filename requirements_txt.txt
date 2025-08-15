@@ -1,2 +1,0 @@
-biopython>=1.79
-# tkinter is included with Python standard library
