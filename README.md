@@ -1,6 +1,6 @@
 # ez-convphase
 
-ConvPhase wrapper for ragged FASTA alignments. Cleans headers, masks any problematic columns, runs **ConvPhase** in parallel, then rebuilds the original alignment around the phased positions (column-for-column). Supports standard, Haploview & MolD header styles. TSV functions not supported at this time.
+ConvPhase wrapper and gui for phasing ragged FASTA alignments. Cleans headers, masks any problematic columns, runs **ConvPhase** in parallel, then rebuilds the original alignment around the phased positions (column-for-column). Supports standard, Haploview & MolD header styles. TSV functions not supported at this time.
 
 > Not affiliated with iTaxoTools/ConvPhase/PHASE.
 
@@ -14,9 +14,24 @@ ConvPhase wrapper for ragged FASTA alignments. Cleans headers, masks any problem
 
 ---
 
+## GUI Interface
+
+- EZ-ConvPhase now includes a user-friendly GUI for easier pipeline management.
+
+### Installation
+
+# Install Python dependencies
+pip install -r requirements.txt
+
+# Ensure system dependencies
+# macOS: brew install parallel
+# Ubuntu: sudo apt-get install parallel
+
+---
+
 ## Features
 
-  - Header-safe: works with `sample|Species` and `sample.Species`.
+- Header-safe: works with `sample|Species` and `sample.Species`.
 - Hap suffix mapping on the **left token only**: `_a/_b`, `-a/-b`, `.a/.b`, `/a,/b`, space-`a/b`, trailing `a/b`.
 - Exact reconstruction via JSON mask (`kept_indices` + per-column chars).
 - Parallel ConvPhase runs (GNU `parallel`).
