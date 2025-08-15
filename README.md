@@ -1,6 +1,6 @@
 # ez-convphase
 
-**ez-ConvPhase** is a wrapper for phasing ragged FASTA alignments using itaxotools ConvPhase (implements SeqPhase and PHASE2.1). Cleans headers, masks any problematic columns, runs **ConvPhase** in **parallel**, then rebuilds the original alignment around the phased positions (column-for-column). Supports standard, Haploview & MolD header styles. TSV functions not supported at this time.
+**ez-convphase** is a wrapper for phasing ragged FASTA alignments using itaxotools ConvPhase (implements SeqPhase and PHASE2.1). Cleans headers, masks any problematic columns, runs **ConvPhase** in **parallel**, then rebuilds the original alignment around the phased positions (column-for-column). Supports standard, Haploview & MolD header styles. TSV functions not supported at this time.
 
 > Not affiliated with iTaxoTools/ConvPhase/PHASE.
 
