@@ -4,9 +4,9 @@
 
 > Not affiliated with iTaxoTools/ConvPhase/PHASE.
 
-#*******
+------------
 **Added a GUI!**
-#*******
+------------
 
 ---
 
