@@ -23,9 +23,9 @@ Ez-ConvPhase is a gui wrapper for phasing ragged FASTA alignments using itaxotoo
 # Install Python dependencies
 pip install -r requirements.txt
 
-# Ensure system dependencies
-# macOS: brew install parallel
-# Ubuntu: sudo apt-get install parallel
+- Ensure system dependencies
+- macOS: brew install parallel
+- Ubuntu: sudo apt-get install parallel
 
 ---
 
